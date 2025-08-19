@@ -19,12 +19,12 @@
 }
 .text-columns-with-image__heading-title {
   display: block;
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   word-break: normal;
   white-space: nowrap;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: vertical; */
 }
 .text-columns-with-image__heading-link {
   display: flex;

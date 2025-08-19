@@ -1,0 +1,42 @@
+<div class="why-choose__icon-list {{block.settings | class_list()}}" {{{block.shopline_attributes}}}>
+  <div class="icon-list-item">
+    {{#if block.settings.image}}
+      {{#component "image-with-text" image=block.settings.image text=block.settings.text class="hover-scale__image" /}}
+    {{#else /}}
+      {{#placeholder_svg "image" class="empty-image-class" /}}
+    {{/if}}
+  </div>
+  <div>
+
+  </div>
+</div>
+
+{{#schema}}
+{
+  "name": "Icon List",
+  "icon": "list",
+  "settings": [
+    {
+      "type": "image",
+      "id": "image",
+      "label": "Image",
+      "default": {}
+    },
+    {
+      "type": "style.layout",
+      "id": "layout",
+      "label": "Layout",
+      "default": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "justify-content": "center",
+        "align-items": "center",
+        "gap": "2rem",
+        "@media (--mobile)": {
+          "gap": "1.5rem"
+        }
+      }
+    }
+  ]
+}
+{{/schema}}
