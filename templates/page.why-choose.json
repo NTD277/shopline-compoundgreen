@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "main": {
+      "type": "why-choose",
+      "settings": {
+        "color_scheme": "scheme-1"
+      },
+      "blocks": {
+        "heading": {
+          "type": "$heading",
+          "settings": {
+            "heading": "Why Choose MaryRuth's?"
+          }
+        },
+        "description": {
+          "type": "$description",
+          "settings": {
+            "description": "MaryRuth's wholeheartedly creates vitamins and supplements with the utmost care, fueling your wellness journey and uplifting your loved ones to move forward every day."
+          }
+        },
+        "icon-list": {
+          "type": "$icon-list",
+          "settings": {
+            "icon_items": [
+              {
+                "text": "Vegan"
+              },
+              {
+                "text": "Vegan"
+              },
+              {
+                "text": "Vegan"
+              },
+              {
+                "text": "Vegan"
+              },
+              {
+                "text": "Vegan"
+              },
+              {
+                "text": "Vegan"
+              }
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "description",
+        "icon-list"
+      ]
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

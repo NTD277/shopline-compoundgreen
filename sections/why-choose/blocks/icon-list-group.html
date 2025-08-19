@@ -1,0 +1,16 @@
+<div class="why-choose__icon-list {{block.settings | class_list()}}" {{{block.shopline_attributes}}}>
+    {{#content "blocks" /}}
+</div>
+
+{{#schema}}
+{
+  "name": "Icon List",
+  "class": "icon-list-group",
+  "blocks": [
+    {
+      "type": "$icon-list",
+      "limit": 6
+    }
+  ]
+}
+{{/schema}}

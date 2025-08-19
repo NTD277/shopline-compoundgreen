@@ -1,0 +1,43 @@
+<div class="icon-list-item">
+  {{#if block.settings.icon}}
+    {{#component "image-with-text" image=block.settings.icon text=block.settings.text class="hover-scale__image" /}}
+  {{#else /}}
+    {{#placeholder_svg "image" class="empty-image-class" /}}
+  {{/if}}
+</div>
+
+{{#schema}}
+{
+  "name": "Icon",
+  "icon": "list",
+  "settings": [
+    {
+      "type": "image",
+      "id": "icon",
+      "label": "Image",
+      "default": {}
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Vegan"
+    },
+    {
+      "type": "style.layout",
+      "id": "layout",
+      "label": "Layout",
+      "default": {
+        "display": "flex",
+        "flex-wrap": "wrap",
+        "justify-content": "center",
+        "align-items": "center",
+        "gap": "2rem",
+        "@media (--mobile)": {
+          "gap": "1.5rem"
+        }
+      }
+    }
+  ]
+}
+{{/schema}}

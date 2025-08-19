@@ -1,0 +1,11 @@
+{{#var image = props.image /}}
+{{#var text = props.text /}}
+
+<div class="image-with-text">
+  <div class="image-with-text__image">
+    {{#component "image" data=image /}}
+  </div>
+  <div class="image-with-text__text">
+    {{text}}
+  </div>
+</div>

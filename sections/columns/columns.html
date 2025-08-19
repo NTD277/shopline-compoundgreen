@@ -1,0 +1,198 @@
+{{#component "stylesheet" src="./columns.css" | asset_url() /}}
+{{#component "script" src="./columns.js" | asset_url() /}}
+{{#component "button" type="link" link_url="http://127.0.0.1:8282/preview/?preview=1&themeId=68a28f4d15e2b30a0da9b96e&ignoreRedirect=true&dev_mode=1" style_link=true html=html /}}
+{{#component "multicolumn" type="text" /}}
+{{#component "icons/pay" /}}
+<h1>demo</h1>
+
+{{#schema}}
+{
+    "name": "Columns",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "range",
+        "id": "heading_size",
+        "label": "Heading size",
+        "min": 1,
+        "max": 15,
+        "step": 1,
+        "default": 5
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "options": [
+          {
+            "value": "grid",
+            "label": "Grid"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "grid"
+      },
+      {
+        "type": "header",
+        "content": "Grid",
+        "info": "Applies only when layout is set to Grid"
+      },
+      {
+        "type":    "range",
+        "id":      "grid",
+        "label":   "Items per row",
+        "min":     2,
+        "max":     6,
+        "step":    1,
+        "default": 3
+      },
+      {
+        "type": "header",
+        "content": "Alignment"
+      },
+      {
+        "type": "select",
+        "id": "align_heading",
+        "label": "Heading",
+        "default": "text-left",
+        "options": [
+          {
+            "value": "text-left",
+            "label": "Left"
+          },
+          {
+            "value": "text-center",
+            "label": "Centered"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text",
+        "default": "text-left",
+        "options": [
+          {
+            "value": "text-left",
+            "label": "Left"
+          },
+          {
+            "value": "text-center",
+            "label": "Centered"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "align_columns",
+        "label": "Columns",
+        "default": "flex-align-top",
+        "options": [
+          {
+            "value": "flex-align-top",
+            "label": "Top"
+          },
+          {
+            "value": "flex-align-center",
+            "label": "Centered"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "width",
+        "label": "Width",
+        "default": "wrapper--full-padded",
+        "options": [
+          {"value": "wrapper--full-padded", "label": "Full width padded"},
+          {"value": "wrapper", "label": "Normal"}
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 50
+      },
+      {
+        "type": "header",
+        "content": "Mobile"
+      },
+      {
+        "type": "select",
+        "id": "layout_mobile",
+        "label": "Layout",
+        "options": [
+          {
+            "value": "1",
+            "label": "1 item per row"
+          },
+          {
+            "value": "2",
+            "label": "2 items per row"
+          },
+          {
+            "value": "slider",
+            "label": "Slider"
+          }
+        ],
+        "default": "slider"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "$image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Columns",
+      "blocks": [
+        {
+          "type": "$image"
+        }
+      ]
+    }
+  ]
+}
+{{/schema}}

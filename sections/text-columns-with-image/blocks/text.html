@@ -1,0 +1,35 @@
+<div class="text-columns-with-image__card-text {{block.settings.layout}}" {{{block.shopline_attributes}}}>{{{block.settings.text}}}</div>
+
+{{#schema}}
+{
+  "name": "t:sections.text_columns_with_image.blocks.text.name",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "t:sections.text_columns_with_image.blocks.text.settings.text.label",
+      "default": "Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis."
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Layout",
+      "options": [
+        {
+          "value": "text-left",
+          "label": "Left"
+        },
+        {
+          "value": "text-center",
+          "label": "Center"
+        },
+        {
+          "value": "text-right",
+          "label": "Right"
+        }
+      ],
+      "default": "text-left"
+    }
+  ]
+}
+{{/schema}}

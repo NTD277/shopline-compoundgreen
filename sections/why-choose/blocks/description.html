@@ -1,0 +1,33 @@
+<div class="why-choose__description {{block.settings | class_list()}}" {{{block.shopline_attributes}}}>
+  {{block.settings.description}}
+</div>
+
+{{#schema}}
+{
+  "name": "Description",
+  "icon": "text",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description Text",
+      "default": "MaryRuth's wholeheartedly creates vitamins and supplements with the utmost care, fueling your wellness journey and uplifting your loved ones to move forward every day."
+    },
+    {
+      "type": "style.typography",
+      "id": "typography",
+      "label": "Typography",
+      "default": {
+        "font-family": "inherit",
+        "font-size": "1.125rem",
+        "font-weight": "400",
+        "line-height": "1.6",
+        "text-align": "center",
+        "@media (--mobile)": {
+          "font-size": "1rem"
+        }
+      }
+    }
+  ]
+}
+{{/schema}}
