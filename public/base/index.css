@@ -1235,3 +1235,27 @@ input:checked ~ .icon--checkbox .checkmark {
 .space-around {
   justify-content: space-around;
 }
+
+.pay-button-common-item {
+  border: 1px solid rgb(var(--color-button-text));
+}
+
+:root {
+  --plugin-product-comment-color_body: #004b7c;
+  --plugin-product-comment-color_text: #004b7c;
+  --plugin-product-comment-color_text_title: #004b7c;
+  --plugin-product-comment-color_entry_line: ##fff;
+  --plugin-product-comment-color_btn_background: #004b7c;
+  --plugin-product-comment-color_page_background: #ffffff;
+  --plugin-product-comment-color_product_title: #004b7c;
+  --isv-web-color_page_background: 0, 75, 124;
+  --isv-web-color_btn_background: 0, 75, 124;
+  --plugin-product-comment-color_text_60: rgba(0, 75, 124, 0.6) !important;
+  --plugin-product-comment-color_text_50: rgba(0, 75, 124, 0.5) !important;
+  --plugin-product-comment-color_text_40: rgba(0, 75, 124, 0.4) !important;
+}
+
+.plugin-product-comment-select-buttons.plugin-product-comment-follow-theme
+  .plugin-product-comment-select-buttons-item {
+  border: 1px solid #004b7c !important;
+}

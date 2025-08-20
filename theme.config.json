@@ -1,1 +1,109 @@
-{"current":"Default","presets":{"Default":{"sections":{},"theme":{"color_schemes":{"scheme-1":{"settings":{"color_background":"#F3F2E0","color_button_background":"#3D3819","color_button_secondary_background":"#F3F2E0","color_button_secondary_border":"#726C4A","color_button_secondary_text":"#3D3819","color_button_text":"#F3F2E0","color_button_text_link":"#3D3819","color_entry_line":"#CBCBCB","color_light_text":"#726C4A","color_text":"#3D3819"}},"scheme-2":{"settings":{"color_background":"#A7A92F","color_button_background":"#F3F2E0","color_button_secondary_background":"#A7A92F","color_button_secondary_border":"#F3F2E0","color_button_secondary_text":"#F3F2E0","color_button_text":"#87891E","color_button_text_link":"#FFFFFB","color_entry_line":"#FFFFFB","color_light_text":"#FFFFFB","color_text":"#F3F2E0"}},"scheme-3":{"settings":{"color_background":"#DA9E52","color_button_background":"#AF7D3E","color_button_secondary_background":"#DA9E52","color_button_secondary_border":"#3D3820","color_button_secondary_text":"#3D3819","color_button_text":"#DA9E52","color_button_text_link":"#3D3821","color_entry_line":"#AF7D3E","color_light_text":"#514E3B","color_text":"#3D3819"}},"scheme-4":{"settings":{"color_background":"#1E1E1E","color_button_background":"#FFFFFF","color_button_secondary_background":"rgba(0,0,0,0)","color_button_secondary_border":"#FFFFFF","color_button_secondary_text":"#FFFFFF","color_button_text":"#1E1E1E","color_button_text_link":"#FFFFFF","color_entry_line":"#FFFFFF","color_light_text":"#9A9A9A","color_text":"#FFFFFF"}}}}}}}
+{
+  "id": null,
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "theme": {
+        "color_cart_bubble": "#EE4700",
+        "color_cart_bubble_text": "#FFFFFF",
+        "color_discount": "#EE4700",
+        "color_image_background": "#F8F8F8",
+        "color_image_loading_background": "#E1E4E8",
+        "color_mask": "#000000",
+        "color_page_background": "#ffffff",
+        "color_sale": "#3D3819",
+        "color_schemes": {
+          "scheme-1": {
+            "settings": {
+              "color_background": "#ffffff",
+              "color_button_background": "#ffffff",
+              "color_button_secondary_background": "#004b7c",
+              "color_button_secondary_border": "#ffffff",
+              "color_button_secondary_text": "#ffffff",
+              "color_button_text": "#004b7c",
+              "color_button_text_link": "#004b7c",
+              "color_entry_line": "#004b7c",
+              "color_light_text": "#004b7c",
+              "color_text": "#004b7c"
+            }
+          },
+          "scheme-2": {
+            "settings": {
+              "color_background": "#A7A92F",
+              "color_button_background": "#F3F2E0",
+              "color_button_secondary_background": "#A7A92F",
+              "color_button_secondary_border": "#F3F2E0",
+              "color_button_secondary_text": "#F3F2E0",
+              "color_button_text": "#87891E",
+              "color_button_text_link": "#FFFFFB",
+              "color_entry_line": "#FFFFFB",
+              "color_light_text": "#FFFFFB",
+              "color_text": "#F3F2E0"
+            }
+          },
+          "scheme-3": {
+            "settings": {
+              "color_background": "#DA9E52",
+              "color_button_background": "#AF7D3E",
+              "color_button_secondary_background": "#DA9E52",
+              "color_button_secondary_border": "#3D3820",
+              "color_button_secondary_text": "#3D3819",
+              "color_button_text": "#DA9E52",
+              "color_button_text_link": "#3D3821",
+              "color_entry_line": "#AF7D3E",
+              "color_light_text": "#514E3B",
+              "color_text": "#3D3819"
+            }
+          },
+          "scheme-4": {
+            "settings": {
+              "color_background": "#1E1E1E",
+              "color_button_background": "#FFFFFF",
+              "color_button_secondary_background": "rgba(0,0,0,0)",
+              "color_button_secondary_border": "#FFFFFF",
+              "color_button_secondary_text": "#FFFFFF",
+              "color_button_text": "#1E1E1E",
+              "color_button_text_link": "#FFFFFF",
+              "color_entry_line": "#FFFFFF",
+              "color_light_text": "#9A9A9A",
+              "color_text": "#FFFFFF"
+            }
+          }
+        },
+        "color_shadow": "#000000",
+        "color_tag_background": "#EE4700",
+        "color_tag_text": "#FFFFFF"
+      },
+      "sections": {},
+      "blocks": {
+        "17556736694210b19a31": {
+          "type": "shopline://apps/Product Review/blocks/app_embed_block/bd4a09d9-7542-4e11-931c-19fe441576aa",
+          "settings": {
+            "comment_html": ":root {\n        --plugin-product-comment-color_body\n#004b7c\n: #004b7c;\n    --plugin-product-comment-color_text: #004b7c;\n    --plugin-product-comment-color_text_title: #004b7c;\n    --plugin-product-comment-color_entry_line: ##fff;\n    --plugin-product-comment-color_btn_background: #004b7c;\n    --plugin-product-comment-color_page_background: #ffffff;\n    --plugin-product-comment-color_product_title: #004b7c;\n--isv-web-color_page_background: 0, 75, 124;\n--isv-web-color_btn_background: 0, 75, 124;\n}"
+          },
+          "disabled": false
+        },
+        "17556736694210db8525": {
+          "type": "shopline://apps/Subscriptions/blocks/app-embed-block/dc7225ea-8d91-400c-9a0c-7a168bb9ec98",
+          "settings": {},
+          "disabled": false
+        },
+        "1755673669421a31498f": {
+          "type": "shopline://apps/Product Review/blocks/comment-pop/bd4a09d9-7542-4e11-931c-19fe441576aa",
+          "settings": {},
+          "disabled": false
+        },
+        "1755673669421a58579a": {
+          "type": "shopline://apps/Product Review/blocks/comment-structure/bd4a09d9-7542-4e11-931c-19fe441576aa",
+          "settings": {},
+          "disabled": false
+        },
+        "1755673669421c20b461": {
+          "type": "shopline://apps/SmartPush/blocks/app-embed-block/ba1ca5f6-ccc5-43fc-8ddb-f3b5147e1fc5",
+          "settings": {},
+          "disabled": true
+        }
+      }
+    }
+  }
+}
