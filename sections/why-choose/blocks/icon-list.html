@@ -1,6 +1,6 @@
 <div class="icon-list-item">
   {{#if block.settings.icon}}
-    {{#component "image-with-text" image=block.settings.icon text=block.settings.text class="hover-scale__image" /}}
+    {{#component "image-with-text" image=block.settings.icon text=block.settings.text class="hover-scale__image" sizes=block.settings.sizes /}}
   {{#else /}}
     {{#placeholder_svg "image" class="empty-image-class" /}}
   {{/if}}
@@ -22,6 +22,15 @@
       "id": "text",
       "label": "Text",
       "default": "Vegan"
+    },
+    {
+      "type": "style.size",
+      "id": "sizes",
+      "label": "t:blocks.button_group.settings.size.label",
+      "default": {
+        "width": "100%",
+        "height": "auto"
+      }
     },
     {
       "type": "style.layout",

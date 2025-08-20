@@ -17,7 +17,7 @@
 {{#var product_money_price_min = product.price_min | money_with_currency() /}}
 {{#var product_money_price_max = product.price_max | money_with_currency() /}}
 
-<span class="product-price title-font-bold body1 {{props.class}}">
+<span class="product-price {{props.class}}">
   {{#if product.quantity_price_breaks_configured}}
     
     <span class="product-price__item">{{{product_money_price_min}}} - {{{product_money_price_max}}}</span>
