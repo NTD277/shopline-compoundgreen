@@ -33,9 +33,7 @@
   z-index: var(--z-index-active);
   display: inline-block;
 }
-.announcement-bar__group-item-inner .rte {
-  font-weight: bold;
-}
+
 .announcement-bar__group-item-link,
 .announcement-bar__group-item-link:empty {
   position: absolute;

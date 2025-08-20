@@ -21,7 +21,7 @@
         {{#component "icons/globe" class=icon_class /}}
     {{/switch}}
   {{/if}}
-  <p class="sell-info__text body4 title-font-bold">{{{block.settings.info_text}}}</p>
+  <p class="sell-info__text body4">{{{block.settings.info_text}}}</p>
 </li>
 
 {{#schema}}
@@ -70,7 +70,7 @@
     {
       "id": "info_text",
       "label": "t:blocks.product.detail_sell_info_row.settings.info_text.label",
-      "type": "text",
+      "type": "richtext",
       "default": "Free worldwide shipping"
     }
   ],

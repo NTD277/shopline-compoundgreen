@@ -10,13 +10,13 @@
 
 .product-detail__sell-info .sell-info {
   display: flex;
-  gap: 15px;
+  gap: 8px;
   align-items: center;
 }
 
 .product-detail__sell-info .sell-info__icon {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
 }
 

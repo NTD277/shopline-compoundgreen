@@ -1,9 +1,9 @@
 {{#component "stylesheet" src="./heading-with-link.css" | asset_url() /}}
 
 <div class="heading-with-link" {{{block.shopline_attributes}}}>
-  <div class="{{block.settings.text_size}} title-font-bold heading-with-link__title">{{block.settings.text}}</div>
+  <div style="{{#if block.settings.text_color}}color: {{block.settings.text_color.hex}};{{/if}}" class="{{block.settings.text_size}} title-font-bold heading-with-link__title">{{block.settings.text}}</div>
   {{#if block.settings.link_text}}
-    {{#component "button" type="link" link_url=block.settings.link text=block.settings.link_text /}}
+    {{#component "button" type="link" link_url=block.settings.link text=block.settings.link_text color_background=block.settings.color_background color_button_text=block.settings.color_button_text /}}
   {{/if}}
 </div>
 
@@ -45,6 +45,21 @@
       "label": "t:blocks.heading_with_link.settings.link_text.label",
       "info": "t:blocks.heading_with_link.settings.link_text.info",
       "default": "View more"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "Button background color"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "Button text color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color"
     }
   ],
   "presets": [
