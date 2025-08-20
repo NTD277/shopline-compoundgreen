@@ -395,6 +395,7 @@
         "1755568667061e25b22c": {
           "type": "product-list/list",
           "settings": {
+            "color_scheme": "scheme-1",
             "mobile_columns": 1
           },
           "blocks": {
@@ -709,8 +710,7 @@
       "block_order": [
         "1755568770679f6bb652",
         "1755568770679685f225"
-      ],
-      "custom_css": []
+      ]
     },
     "17555689277986dbfab7": {
       "type": "text-columns-with-image",
@@ -850,8 +850,7 @@
         "1755568927800cd128b7",
         "175556928586165b49bd",
         "1755568927800820a4da"
-      ],
-      "custom_css": []
+      ]
     }
   },
   "order": [

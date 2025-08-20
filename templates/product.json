@@ -1,143 +1,310 @@
 {
   "sections": {
+    "175567349910301e45a2": {
+      "type": "apps",
+      "settings": {
+        "sync_margins_with_theme": true
+      },
+      "disabled": false,
+      "blocks": {
+        "17556734991045ce0627": {
+          "type": "shopline://apps/Product Review/blocks/comment-list/bd4a09d9-7542-4e11-931c-19fe441576aa",
+          "settings": {
+            "head_text_align": "left",
+            "hide_component": false,
+            "mb_comment_num": "6",
+            "mb_header_size": "3",
+            "mb_turn_page": "2",
+            "mobile_sort_type": "1",
+            "padding_config": {
+              "mobile": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+              },
+              "pc": {
+                "bottom": 0,
+                "left": 0,
+                "right": 0,
+                "top": 0
+              }
+            },
+            "pc_comment_num": "12",
+            "pc_header_size": "3",
+            "pc_turn_page": "2",
+            "sort_by": "1"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "17556734991045ce0627"
+      ],
+      "custom_css": []
+    },
     "main-product-info": {
       "type": "main-product",
-      "settings": {},
-      "blocks": {
-        "media-group": {
-          "type": "$product-media-group",
-          "blocks": {
-            "media": {
-              "type": "$product-media",
-              "blocks": {
-                "media-layer": {
-                  "type": "$product-media-layer"
-                }
-              },
-              "block_order": ["media-layer"]
-            }
+      "settings": {
+        "color_scheme": "scheme-1",
+        "layout": {
+          "@media (--mobile)": {
+            "column-gap": "20px",
+            "flex-direction": "column",
+            "row-gap": "20px"
           },
-          "block_order": ["media"]
+          "column-gap": "60px",
+          "flex-direction": "row",
+          "flex-wrap": "nowrap",
+          "row-gap": "60px"
         },
+        "spacing": {
+          "@media (--mobile)": {
+            "padding-block-end": "20px",
+            "padding-block-start": "20px"
+          },
+          "padding-block-end": "60px",
+          "padding-block-start": "60px"
+        }
+      },
+      "disabled": false,
+      "blocks": {
         "info": {
           "type": "$product-info",
           "settings": {},
           "blocks": {
-            "title": {
-              "type": "product/detail-heading",
-              "settings": {}
+            "1755659637865b1fb338": {
+              "type": "shopline://apps/Subscriptions/blocks/subscription/dc7225ea-8d91-400c-9a0c-7a168bb9ec98",
+              "settings": {
+                "bg_color": "#FFFFFF",
+                "border_color": "#004b7c",
+                "border_color_hover": "#004b7c",
+                "border_radius": 8,
+                "discount_color": "#e02020",
+                "discount_ratio_color": "#e02020",
+                "option_bg_color": "#FFFFFF",
+                "option_bg_color_hover": "#FFFFFF",
+                "option_text_color_hover": "#004b7c",
+                "price_color": "#e02020",
+                "purchase_type": "subscribe",
+                "style_setting": "custom_setting",
+                "title_color": "#004b7c"
+              },
+              "blocks": {}
             },
-            "price": {
-              "type": "product/detail-price",
-              "settings": {}
+            "17556656611006a54044": {
+              "type": "product/detail-additional",
+              "settings": {
+                "custom_page": "",
+                "description": "\u003cstyle type=\"text/css\"\u003e\u003c!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--\u003e\u003c/style\u003e\n\u003cspan data-sheets-root=\"1\"\u003e- Serving Size: 2 capsules daily\u003cbr\u003e- Take with water, preferably with meals\u003c/span\u003e",
+                "enabled_fold": true,
+                "icon": "none",
+                "title": "How to Take"
+              },
+              "blocks": {},
+              "block_order": []
             },
-            "variant-picker": {
-              "type": "product/detail-variant-picker",
-              "settings": {}
+            "17556656830473bef3b4": {
+              "type": "product/detail-additional",
+              "settings": {
+                "custom_page": "",
+                "description": "\u003cstyle type=\"text/css\"\u003e\u003c!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--\u003e\u003c/style\u003e\n\u003cspan data-sheets-root=\"1\"\u003ePer 2 capsules:\u003cbr\u003e- Vitamins: A (1222 mcg), C (125 mg), D (3 mcg), E (14 mg), B-complex (B1, B2, B6, B12, Folate, Biotin, Pantothenic Acid)\u003cbr\u003e- Minerals: Calcium 20 mg, Iron 1 mg, Magnesium 12 mg, Zinc 12 mg, Selenium 90 mcg, Copper 52 mcg, Manganese 400 mcg, Chromium 12 mcg, Molybdenum 10 mcg, Potassium 50 mg\u003cbr\u003e- Proprietary Blend 367 mg: DMAE Bitartrate, Ginkgo Biloba, Bacopa Monnieri, Gotu Kola, Eleuthero Root, Cinnamon, Green Tea, Dark Chocolate, GABA, etc.\u003c/span\u003e",
+                "enabled_fold": true,
+                "icon": "none",
+                "image": "shopline://shop_images/pic2_1.png",
+                "title": "Supplement Facts"
+              },
+              "blocks": {},
+              "block_order": []
             },
-            "quantity-selector": {
-              "type": "product/detail-quantity-selector",
-              "settings": {}
+            "additional": {
+              "type": "product/detail-additional",
+              "settings": {
+                "custom_page": "",
+                "description": "\u003cstyle type=\"text/css\"\u003e\u003c!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--\u003e\u003c/style\u003e\n\u003cspan data-sheets-root=\"1\"\u003e- B-Complex Vitamins (B1, B2, B6, B12, Folate): Support energy metabolism and brain neurotransmitter function.\u003cbr\u003e- Iron \u0026amp; Magnesium: Promote oxygen transport and nerve signaling for mental energy.\u003cbr\u003e- Ginkgo Biloba \u0026amp; Bacopa: Enhance memory, focus, and cognitive performance.\u003cbr\u003e- Choline \u0026amp; DMAE: Aid in neurotransmitter synthesis for better brain communication.\u003c/span\u003e",
+                "enabled_fold": true,
+                "icon": "none",
+                "title": "How It Works        "
+              },
+              "blocks": {}
             },
             "buy-buttons": {
               "type": "product/detail-buy-buttons",
-              "settings": {}
+              "settings": {},
+              "blocks": {}
             },
-            "share": {
-              "type": "product/detail-share",
-              "settings": {}
+            "description": {
+              "type": "product/detail-description",
+              "settings": {},
+              "blocks": {}
+            },
+            "quantity-selector": {
+              "type": "product/detail-quantity-selector",
+              "settings": {},
+              "blocks": {}
             },
             "sell-info": {
               "type": "product/detail-sell-info",
-              "settings": {},
+              "settings": {
+                "gap": 2
+              },
               "blocks": {
                 "sell_info_1": {
                   "type": "product/detail-sell-info-row",
                   "settings": {
                     "info_icon": "globe",
-                    "info_text": "Free worldwide shipping"
-                  }
+                    "info_text": "\u003cspan style=\"color: #e03e2d;\"\u003e60 capsules (30-day supply)\u003c/span\u003e",
+                    "is_show_icon": false
+                  },
+                  "blocks": {}
                 },
                 "sell_info_2": {
                   "type": "product/detail-sell-info-row",
                   "settings": {
                     "info_icon": "checkmark",
-                    "info_text": "Free returns"
-                  }
+                    "info_text": "\u003cspan style=\"color: #e03e2d;\"\u003eFree returns\u003c/span\u003e",
+                    "is_show_icon": false
+                  },
+                  "blocks": {}
                 },
                 "sell_info_3": {
                   "type": "product/detail-sell-info-row",
                   "settings": {
                     "info_icon": "leaf",
-                    "info_text": "Carbon neutral"
-                  }
+                    "info_text": "\u003cspan style=\"color: #e03e2d;\"\u003eCarbon neutral\u003c/span\u003e",
+                    "is_show_icon": false
+                  },
+                  "blocks": {}
                 },
                 "sell_info_4": {
                   "type": "product/detail-sell-info-row",
                   "settings": {
                     "info_icon": "lock",
-                    "info_text": "Secure payments"
-                  }
+                    "info_text": "\u003cspan style=\"color: #e03e2d;\"\u003eSecure payments\u003c/span\u003e",
+                    "is_show_icon": false
+                  },
+                  "blocks": {}
                 }
               },
-              "block_order": ["sell_info_1", "sell_info_2", "sell_info_3", "sell_info_4"]
+              "block_order": [
+                "sell_info_1",
+                "sell_info_2",
+                "sell_info_3",
+                "sell_info_4"
+              ]
             },
-            "description": {
-              "type": "product/detail-description",
-              "settings": {}
+            "share": {
+              "type": "product/detail-share",
+              "settings": {},
+              "blocks": {}
             },
-            "additional": {
-              "type": "product/detail-additional",
-              "settings": {
-                "title": "Example title",
-                "icon": "none",
-                "description": "",
-                "custom_page": "",
-                "enabled_fold": true
-              }
+            "title": {
+              "type": "product/detail-heading",
+              "settings": {},
+              "blocks": {}
+            },
+            "variant-picker": {
+              "type": "product/detail-variant-picker",
+              "settings": {},
+              "blocks": {}
             }
           },
           "block_order": [
             "title",
-            "price",
             "sell-info",
             "variant-picker",
+            "1755659637865b1fb338",
             "quantity-selector",
             "buy-buttons",
             "description",
             "share",
-            "additional"
+            "additional",
+            "17556656611006a54044",
+            "17556656830473bef3b4"
+          ]
+        },
+        "media-group": {
+          "type": "$product-media-group",
+          "settings": {},
+          "blocks": {
+            "media": {
+              "type": "$product-media",
+              "settings": {
+                "desktop_layout": "thumbnail-carousel",
+                "image_quality": "80",
+                "mobile_layout": "show-thumbnail"
+              },
+              "blocks": {
+                "media-layer": {
+                  "type": "$product-media-layer",
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "media-layer"
+              ]
+            }
+          },
+          "block_order": [
+            "media"
           ]
         }
       },
-      "block_order": ["media-group", "info"]
+      "block_order": [
+        "media-group",
+        "info"
+      ]
     },
     "recommended-product": {
       "type": "recommended-product",
-      "settings": {},
+      "settings": {
+        "layout": {
+          "@media (--mobile)": {
+            "column-gap": "20px",
+            "row-gap": "20px"
+          },
+          "column-gap": "40px",
+          "flex-direction": "column",
+          "flex-wrap": "nowrap",
+          "row-gap": "40px"
+        },
+        "spacing": {
+          "@media (--mobile)": {
+            "padding-bottom": "20px",
+            "padding-top": "20px"
+          },
+          "padding-bottom": "60px",
+          "padding-top": "60px"
+        }
+      },
+      "disabled": false,
       "blocks": {
         "recommended-product__heading": {
           "type": "heading",
           "settings": {
             "text": "You may also like",
             "text_align": "center"
-          }
+          },
+          "blocks": {}
         },
         "recommended-product__product-list": {
           "type": "product-list/list",
           "settings": {
-            "page_size": 4,
             "desktop_columns": 4,
-            "mobile_columns": 2,
             "desktop_enable_slider": true,
-            "mobile_enable_slider": true
+            "mobile_columns": 2,
+            "mobile_enable_slider": true,
+            "page_size": 4
           },
           "blocks": {
             "recommended-product__product-list__card": {
               "type": "product-list/card",
+              "settings": {},
               "blocks": {
                 "recommended-product__product-list__card__image": {
                   "type": "product-list/image",
+                  "settings": {},
                   "blocks": {
                     "recommended-product__product-list__card__image__layer-1": {
                       "type": "product-list/layer",
@@ -148,10 +315,14 @@
                       },
                       "blocks": {
                         "recommended-product__product-list__card__image__layer__discount-tag": {
-                          "type": "product-list/discount_tag"
+                          "type": "product-list/discount_tag",
+                          "settings": {},
+                          "blocks": {}
                         }
                       },
-                      "block_order": ["recommended-product__product-list__card__image__layer__discount-tag"]
+                      "block_order": [
+                        "recommended-product__product-list__card__image__layer__discount-tag"
+                      ]
                     },
                     "recommended-product__product-list__card__image__layer-2": {
                       "type": "product-list/layer",
@@ -162,10 +333,14 @@
                       },
                       "blocks": {
                         "recommended-product__product-list__card__image__layer__quick-add-to-cart": {
-                          "type": "product-list/quick_add"
+                          "type": "product-list/quick_add",
+                          "settings": {},
+                          "blocks": {}
                         }
                       },
-                      "block_order": ["recommended-product__product-list__card__image__layer__quick-add-to-cart"]
+                      "block_order": [
+                        "recommended-product__product-list__card__image__layer__quick-add-to-cart"
+                      ]
                     }
                   },
                   "block_order": [
@@ -173,11 +348,15 @@
                     "recommended-product__product-list__card__image__layer-2"
                   ]
                 },
-                "recommended-product__product-list__card__title": {
-                  "type": "product-list/title"
-                },
                 "recommended-product__product-list__card__price": {
-                  "type": "product-list/price"
+                  "type": "product-list/price",
+                  "settings": {},
+                  "blocks": {}
+                },
+                "recommended-product__product-list__card__title": {
+                  "type": "product-list/title",
+                  "settings": {},
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -187,11 +366,20 @@
               ]
             }
           },
-          "block_order": ["recommended-product__product-list__card"]
+          "block_order": [
+            "recommended-product__product-list__card"
+          ]
         }
       },
-      "block_order": ["recommended-product__heading", "recommended-product__product-list"]
+      "block_order": [
+        "recommended-product__heading",
+        "recommended-product__product-list"
+      ]
     }
   },
-  "order": ["main-product-info", "recommended-product"]
+  "order": [
+    "main-product-info",
+    "recommended-product",
+    "175567349910301e45a2"
+  ]
 }
