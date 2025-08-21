@@ -60,7 +60,9 @@
                 },
                 "1755568527253f2b2495": {
                   "type": "$subtitle",
-                  "settings": {},
+                  "settings": {
+                    "subtitle": "Subtitle New 2"
+                  },
                   "blocks": {}
                 }
               },
@@ -387,7 +389,7 @@
           "type": "heading-with-link/heading-with-link",
           "settings": {
             "link_text": "View more",
-            "text": "Featured collection",
+            "text": "Best seller",
             "text_size": "title2"
           },
           "blocks": {}

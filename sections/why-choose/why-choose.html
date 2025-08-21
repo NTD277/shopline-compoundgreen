@@ -1,7 +1,16 @@
 {{#component "stylesheet" src="./why-choose.css" | asset_url() /}}
 
+<style>
+  {{#if section.settings.bg_color}}
+  .why-choose-section.has-background {
+    background-color: {{section.settings.bg_color.hex}};
+  }
+  {{/if}}
+</style>
+
 <div
-  class="why-choose-section color-{{section.settings.color_scheme.id}}"
+  class="why-choose-section color-{{section.settings.color_scheme.id}}{{#if section.settings.bg_color}} has-background{{/if}}
+  "
   data-section-id="{{section.id}}"
 >
   <div class="page-width {{section.settings | class_list()}}">
@@ -19,7 +28,12 @@
       "id": "color_scheme",
       "label": "Color Scheme",
       "default": "scheme-1"
-    },
+    },  
+     {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background"
+      },
     {
       "type": "style.layout",
       "id": "layout",
