@@ -1,6 +1,6 @@
 {{#component "stylesheet" src="./detail-sell-info.css" | asset_url() /}}
 
-<ul class="product-detail__sell-info" {{{block.shopline_attributes}}}>
+<ul class="product-detail__sell-info" style="gap: {{block.settings.gap}}px;" {{{block.shopline_attributes}}}>
   {{#content "blocks" /}}
 </ul>
 
@@ -9,7 +9,18 @@
   "name": "t:blocks.product.detail_sell_info.name",
   "tag": "",
   "icon": "logoList",
-  "settings": [],
+  "settings": [
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap",
+      "default": 15,
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "unit": "px"
+    }
+  ],
   "blocks": [
     {
       "type": "product/detail-sell-info-row",

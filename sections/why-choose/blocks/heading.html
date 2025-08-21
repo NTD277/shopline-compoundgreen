@@ -1,6 +1,28 @@
-<h2 class="why-choose__heading {{block.settings | class_list()}}" {{{block.shopline_attributes}}}>
+<h2 class="why-choose__heading {{block.settings | class_list()}} {{#if block.settings.font_size}}text-{{block.settings.font_size}} {{/if}} {{#if block.settings.font_size_mobile}}text-mobile-{{block.settings.font_size_mobile}} {{/if}} {{#if block.settings.font_weight}}font-weight-{{block.settings.font_weight}} {{/if}}"
+    style="color: {{ block.settings.heading_color.hex }};"
+    {{{block.shopline_attributes}}}>
   {{block.settings.heading}}
 </h2>
+
+<style>
+  .why-choose__heading.text-{{block.settings.font_size}}  {
+    {{#if block.settings.font_size}}
+    font-size: {{block.settings.font_size}}px;
+    {{/if}}
+  }
+
+  @media screen and (max-width: 768px) {
+    .why-choose__heading.text-mobile-{{block.settings.font_size_mobile}}  {
+      font-size: {{block.settings.font_size_mobile}}px;
+    }
+  }
+
+  .why-choose__heading.font-weight-{{block.settings.font_weight}} {
+    {{#if block.settings.font_weight}}
+    font-weight: {{block.settings.font_weight}};
+    {{/if}}
+  }
+</style>
 
 {{#schema}}
 {
@@ -12,6 +34,35 @@
       "id": "heading",
       "label": "Heading Text",
       "default": "Why Choose MaryRuth's?"
+    },
+    {
+      "type": "range",
+      "label": "Font size desktop",
+      "id": "font_size",
+      "default": 32,
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Font size mobile",
+      "id": "font_size_mobile",
+      "default": 16,
+      "min": 10,
+      "max": 30,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Font weight",
+      "id": "font_weight",
+      "default": 400,
+      "min": 100,
+      "max": 900,
+      "step": 100   
     },
     {
       "type": "style.typography",
@@ -27,6 +78,12 @@
           "font-size": "2rem"
         }
       }
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
     }
   ]
 }

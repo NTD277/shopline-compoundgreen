@@ -1,27 +1,29 @@
 {{#var icon_class = "sell-info__icon" /}}
 
 <li class="sell-info" {{{block.shopline_attributes}}}>
-  {{#if block.settings.custom_info_icon}}
-    {{#component "image" class=icon_class data=block.settings.custom_info_icon sizes="20px" breakpoints="20" /}}
-  {{#else/}}
-      {{#switch block.settings.info_icon}}
-      {{#case "checkmark" /}}
-        {{#component "icons/checkmark" class=icon_class /}}
-      {{#case "globe" /}}
-        {{#component "icons/globe" class=icon_class /}}
-      {{#case "leaf" /}}
-        {{#component "icons/leaf" class=icon_class /}}
-      {{#case "lock" /}}
-        {{#component "icons/lock" class=icon_class /}}
-      {{#case "package" /}}
-        {{#component "icons/package" class=icon_class /}}
-      {{#case "truck" /}}
-        {{#component "icons/truck" class=icon_class /}}
-      {{#case "globe" /}}
-        {{#component "icons/globe" class=icon_class /}}
-    {{/switch}}
+  {{#if block.settings.is_show_icon}}
+    {{#if block.settings.custom_info_icon}}
+      {{#component "image" class=icon_class data=block.settings.custom_info_icon sizes="20px" breakpoints="20" /}}
+    {{#else/}}
+        {{#switch block.settings.info_icon}}
+        {{#case "checkmark" /}}
+          {{#component "icons/checkmark" class=icon_class /}}
+        {{#case "globe" /}}
+          {{#component "icons/globe" class=icon_class /}}
+        {{#case "leaf" /}}
+          {{#component "icons/leaf" class=icon_class /}}
+        {{#case "lock" /}}
+          {{#component "icons/lock" class=icon_class /}}
+        {{#case "package" /}}
+          {{#component "icons/package" class=icon_class /}}
+        {{#case "truck" /}}
+          {{#component "icons/truck" class=icon_class /}}
+        {{#case "globe" /}}
+          {{#component "icons/globe" class=icon_class /}}
+      {{/switch}}
+    {{/if}}
   {{/if}}
-  <p class="sell-info__text body4">{{{block.settings.info_text}}}</p>
+  <p class="sell-info__text body2">{{{block.settings.info_text}}}</p>
 </li>
 
 {{#schema}}
@@ -30,6 +32,12 @@
   "tag": "",
   "icon": "content",
   "settings": [
+  {
+    "type": "checkbox",
+    "id": "is_show_icon",
+    "label": "Is show icon",
+    "default": true
+  },
     {
       "id": "info_icon",
       "label": "t:blocks.product.detail_sell_info_row.settings.info_icon.label",

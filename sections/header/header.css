@@ -21,10 +21,9 @@
 .header__container-top-wrap {
   position: relative;
   display: grid;
-  grid-template: "action-bar-left nav logo action-bar-right" auto / minmax(
-      0,
-      auto
-    ) minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template:
+    "action-bar-left nav logo action-bar-right" auto / minmax(0, auto)
+    minmax(0, 1fr) auto minmax(0, 1fr);
   column-gap: var(--header-column-gap);
   align-items: center;
   justify-content: space-between;
@@ -173,12 +172,13 @@ theme-nav-bar {
 
 .header-nav__underline::after {
   display: block;
-  width: 0;
+  width: 100%;
   height: var(--underline-size);
   pointer-events: none;
   content: "";
   background-color: rgb(var(--color-text));
-  transition: width 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transform-origin: center;
 }
 
 .header-nav-dropdown-menu .header-nav__underline::after,
@@ -191,7 +191,7 @@ theme-nav-bar {
 .header-nav__underline-scope:hover
   > .header-nav__underline-control
   > .header-nav__underline::after {
-  width: 100%;
+  transform: scaleX(0);
 }
 
 .header-nav__ellipsis {
@@ -208,9 +208,7 @@ theme-nav-bar {
   inset-block-start: 0;
   height: 100%;
   pointer-events: none;
-  transition:
-    pointer-events 0s 0.3s,
-    transform 0.3s ease;
+  transition: pointer-events 0s 0.3s, transform 0.3s ease;
   transform: translate(calc(var(--nav-menu-item-padding-block) * -1), 100%);
 }
 
@@ -318,9 +316,7 @@ header:hover .header-nav-dropdown-menu-scope {
   z-index: -1;
   pointer-events: none;
   opacity: 0;
-  transition:
-    opacity 200ms ease-in,
-    transform 200ms ease-in;
+  transition: opacity 200ms ease-in, transform 200ms ease-in;
   transform: translateY(-10px);
 }
 

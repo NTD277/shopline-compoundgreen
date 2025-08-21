@@ -1,4 +1,6 @@
-<div class="icon-list-item">
+<div class="why-choose__icon-list {{block.settings | class_list()}} 
+{{#if block.settings.font_size}}text-{{block.settings.font_size}} {{/if}} {{#if block.settings.font_weight}}font-weight-{{block.settings.font_weight}} {{/if}}"
+  style="color: {{ block.settings.description_color.hex }};">
   {{#if block.settings.icon}}
     {{#component "image-with-text" image=block.settings.icon text=block.settings.text class="hover-scale__image" sizes=block.settings.sizes /}}
   {{#else /}}
@@ -22,6 +24,31 @@
       "id": "text",
       "label": "Text",
       "default": "Vegan"
+    },
+    {
+      "type": "range",
+      "label": "Font size",
+      "id": "font_size",
+      "default": 32,
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "label": "Font weight",
+      "id": "font_weight",
+      "default": 400,
+      "min": 100,
+      "max": 900,
+      "step": 100
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#000000"
     },
     {
       "type": "style.size",

@@ -1,6 +1,6 @@
 {{#var product = props.product /}}
 
-{{#if product && product.available && settings.product_quick_add }}
+{{#if product && product.available && block.settings.product_quick_add }}
   {{#var variants_size = product | get_variants() | size() /}}
   {{#if variants_size == 1}}
     {{#component "script" src="product/form.js" | asset_url() /}}
@@ -15,16 +15,22 @@
       {{#product_form product id=product_form_id}}
         <input type="hidden" name="id" value="{{product.first_available_variant.id}}" />
         <input type="hidden" required name="quantity" value="1" />
-        <button
+         <button
           class="block-product-card__quick-add"
           type="submit"
           name="add"
+          style="
+            color: {{block.settings.quick_add_text_color}};
+            background-color: {{block.settings.quick_add_bg_color}};
+            {{#if block.settings.quick_add_shape == 'rounded'}}border-radius: 8px;{{/if}}
+            {{#if block.settings.quick_add_shape == 'pill'}}border-radius: 999px;{{/if}}
+            {{#if block.settings.quick_add_shape == 'square'}}border-radius: 0;{{/if}}
+          "
           {{#if !product.first_available_variant.available}}
             disabled
           {{/if}}
         >
-          {{#component "icons/quick-add" class="icon-quick-add" /}}
-          {{#component "icons/loading-spinner" class="icon-loading" /}}
+          {{block.settings.quick_add_text}}
         </button>
       {{/product_form}}
     </theme-product-form>
@@ -42,10 +48,18 @@
       {{{block.shopline_attributes}}}
     >
       <details>
-        <summary class="block-product-card__quick-add">
-          {{#component "icons/quick-add" class="icon-quick-add" /}}
-          {{#component "icons/loading-spinner" class="icon-loading" /}}
-        </summary>
+      <summary class="block-product-card__quick-add"
+        style="
+          color: {{block.settings.quick_add_text_color}};
+          background-color: {{block.settings.quick_add_bg_color}};
+          {{#if block.settings.quick_add_shape == 'rounded'}}border-radius: 8px;{{/if}}
+          {{#if block.settings.quick_add_shape == 'pill'}}border-radius: 999px;{{/if}}
+          {{#if block.settings.quick_add_shape == 'square'}}border-radius: 0;{{/if}}
+        "
+      >
+        {{block.settings.quick_add_text}}
+      </summary>
+
         <div class="block-product-card__modal">
           <div class="block-product-card__modal-content"></div>
           <button name="close" class="modal__close-control block-product-card__modal-close">
@@ -62,6 +76,45 @@
 {
   "name": "t:blocks.product_list.quick.add.name",
   "tag": "",
+
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "product_quick_add",
+      "label": "Hiển thị nút Quick Add",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "quick_add_text",
+      "label": "Nội dung nút Quick Add",
+      "default": "QUICK ADD"
+    },
+    {
+      "type": "color",
+      "id": "quick_add_text_color",
+      "label": "Màu chữ nút Quick Add",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "quick_add_bg_color",
+      "label": "Màu nền nút Quick Add",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "quick_add_shape",
+      "label": "Hình dạng nút Quick Add",
+      "options": [
+        { "value": "rounded", "label": "Bo tròn" },
+        { "value": "pill", "label": "Pill (tròn dài)" },
+        { "value": "square", "label": "Vuông góc" }
+      ],
+      "default": "rounded"
+    }
+  ],
+
   "presets": [
     {
       "name": "t:blocks.product_list.quick.add.presets.presets_0.name"
